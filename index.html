@@ -12,7 +12,6 @@
     <div class="game-container">
         <div class="header">
             <h1>Ayıcıklar</h1>
-            <div class="score">Puan: <span id="score">0</span></div>
         </div>
 
         <div class="game-area" id="gameArea">
@@ -28,7 +27,6 @@
             <div class="butterfly butterfly-3">🦋</div>
 
             <div class="house" style="left: 15%; top: 20%;">
-
                 <svg width="70" height="70" viewBox="0 0 120 120">
                     <ellipse cx="62" cy="105" rx="45" ry="8" fill="#000" opacity="0.2" />
                     <rect x="15" y="50" width="90" height="50" fill="#F4E4BC" stroke="#E6D3A3" stroke-width="2"
@@ -86,12 +84,12 @@
                     <line x1="15" y1="60" x2="105" y2="60" stroke="#B8956A" stroke-width="1" />
                     <line x1="15" y1="75" x2="105" y2="75" stroke="#B8956A" stroke-width="1" />
                     <line x1="15" y1="90" x2="105" y2="90" stroke="#B8956A" stroke-width="1" />
-                    <!-- Çatı -->
-                    <polygon points="5,55 60,15 115,55" fill="#DC143C" stroke="#B91C3C" stroke-width="2" />
-                    <!-- Çatı kiremitleri -->
-                    <path d="M10 50 Q20 45 30 50 Q40 45 50 50 Q60 45 70 50 Q80 45 90 50 Q100 45 110 50" stroke="#B91C3C"
+                    <!-- Çatı - Pembe renk -->
+                    <polygon points="5,55 60,15 115,55" fill="#FF69B4" stroke="#E75480" stroke-width="2" />
+                    <!-- Çatı kiremitleri - Pembe tonları -->
+                    <path d="M10 50 Q20 45 30 50 Q40 45 50 50 Q60 45 70 50 Q80 45 90 50 Q100 45 110 50" stroke="#E75480"
                         stroke-width="1" fill="none" />
-                    <path d="M15 45 Q25 40 35 45 Q45 40 55 45 Q65 40 75 45 Q85 40 95 45 Q105 40 115 45" stroke="#B91C3C"
+                    <path d="M15 45 Q25 40 35 45 Q45 40 55 45 Q65 40 75 45 Q85 40 95 45 Q105 40 115 45" stroke="#E75480"
                         stroke-width="1" fill="none" />
                     <!-- Kapı -->
                     <rect x="45" y="65" width="30" height="35" fill="#8B4513" stroke="#654321" stroke-width="2" rx="15"
@@ -170,7 +168,7 @@
             </div>
 
             <!-- Ayıcıklar -->
-            <div class="bear" id="bear1" data-name="Milo" style="left: 10%; top: 25%;">
+            <div class="bear" id="bear1" data-name="Ömer" style="left: 10%; top: 25%;">
                 <div class="bear-emoji">
                     <svg width="55" height="55" viewBox="0 0 120 120">
                         <ellipse cx="62" cy="110" rx="35" ry="8" fill="#000" opacity="0.2" />
@@ -215,11 +213,10 @@
                     </svg>
                 </div>
                 <div class="bear-name">Ömer</div>
-                <div class="happiness" id="happiness3"></div>
-
+                <div class="happiness" id="happiness1"></div>
             </div>
 
-            <div class="bear" id="bear2" data-name="Luna" style="left: 60%; top: 20%;">
+            <div class="bear" id="bear2" data-name="Ayşenur" style="left: 60%; top: 20%;">
                 <div class="bear-emoji">
                     <svg width="55" height="55" viewBox="0 0 120 120">
                         <ellipse cx="62" cy="110" rx="35" ry="8" fill="#000" opacity="0.2" />
@@ -266,7 +263,8 @@
                 <div class="happiness" id="happiness2"></div>
             </div>
 
-            <div class="bear" id="bear3" data-name="Teddy" style="left: 35%; top: 65%;">
+            <!-- Mimo ayıcığı - yeşil şapka -->
+            <div class="bear" id="bear3" data-name="Mimo" style="left: 35%; top: 65%;">
                 <div class="bear-emoji">
                     <svg width="55" height="55" viewBox="0 0 120 120">
                         <!-- Gölge -->
@@ -308,13 +306,13 @@
                         <!-- Sevimli yanaklar -->
                         <circle cx="38" cy="45" r="4" fill="#FFB6C1" opacity="0.6" />
                         <circle cx="82" cy="45" r="4" fill="#FFB6C1" opacity="0.6" />
-                        <!-- Milo'ya özel: Kırmızı şapka -->
-                        <ellipse cx="60" cy="20" rx="18" ry="8" fill="#DC143C" />
+                        <!-- Mimo'ya özel: Yeşil şapka -->
+                        <ellipse cx="60" cy="20" rx="18" ry="8" fill="#228B22" />
                         <circle cx="60" cy="15" r="3" fill="#FFF" />
                     </svg>
                 </div>
                 <div class="bear-name">Mimo</div>
-                <div class="happiness" id="happiness1"></div>
+                <div class="happiness" id="happiness3"></div>
             </div>
         </div>
 

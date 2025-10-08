@@ -78,7 +78,7 @@ body::before {
     text-align: center;
     margin-bottom: 25px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Ortala */
     align-items: center;
     flex-wrap: wrap;
     position: relative;
@@ -131,7 +131,7 @@ body::before {
         #90EE90 70%, 
         #F0E68C 100%);
     border-radius: 20px;
-    height: 500px;
+    height: 600px;
     margin-bottom: 25px;
     overflow: hidden;
     border: 4px solid #FFB6C1;
@@ -461,10 +461,18 @@ body::before {
 }
 
 @keyframes joyfulBounce {
-    0%, 100% { transform: translateY(0) scale(1); }
-    25% { transform: translateY(-8px) scale(1.05); }
-    50% { transform: translateY(-15px) scale(1.1) rotate(2deg); }
-    75% { transform: translateY(-8px) scale(1.05) rotate(-2deg); }
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg); 
+    }
+    25% { 
+        transform: translateY(-8px) rotate(2deg); 
+    }
+    50% { 
+        transform: translateY(-15px) rotate(-2deg); 
+    }
+    75% { 
+        transform: translateY(-8px) rotate(2deg); 
+    }
 }
 
 .bear.moving {
@@ -490,7 +498,7 @@ body::before {
     }
     
     .game-area {
-        height: 400px;
+        height: 450px;
         border-radius: 15px;
     }
     
@@ -504,12 +512,25 @@ body::before {
         height: 100px;
     }
     
+    .bear-name {
+        font-size: 0.75rem; /* Küçültüldü */
+        padding: 5px 8px; /* Padding azaltıldı */
+        margin-top: 5px; /* Margin azaltıldı */
+        line-height: 1.1; /* Line height azaltıldı */
+        border-width: 2px; /* Border inceldi */
+        border-radius: 10px; /* Border radius küçültüldü */
+        box-shadow: 0 2px 6px rgba(255, 182, 193, 0.2); /* Gölge küçültüldü */
+    }
+    
     .food {
         font-size: 2.5rem;
         width: 75px;
         height: 75px;
         padding: 15px;
         transition: none;
+        min-width: 75px;
+        min-height: 75px;
+        box-sizing: border-box;
     }
     
     .food:hover {
@@ -525,7 +546,6 @@ body::before {
         display: none;
     }
     
-    /* Mobilde küçük elementler */
     .cloud {
         font-size: 1.5rem;
     }
@@ -536,12 +556,24 @@ body::before {
 }
 
 @media (max-width: 480px) {
+    .bear-name {
+        font-size: 0.65rem; /* Daha da küçültüldü */
+        padding: 4px 6px; /* Daha az padding */
+        margin-top: 3px; /* Daha az margin */
+        line-height: 1.0; /* Daha sıkı line height */
+        border-width: 1px; /* İnce border */
+        border-radius: 8px; /* Küçük border radius */
+    }
+    
     .food {
         font-size: 2rem;
         width: 65px;
         height: 65px;
         padding: 12px;
         transition: none;
+        min-width: 65px;
+        min-height: 65px;
+        box-sizing: border-box;
     }
     
     .food-items {
